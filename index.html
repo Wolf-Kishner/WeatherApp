@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="weather.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <header>
+      <nav class="items">
+        <ul class="list">
+          <li><a href="" # class="links">Weather App</a></li>
+          <li><a href="#" class="links">Home</a></li>
+          <li><a href="#" class="links">About this App</a></li>
+          <li><a href="#" class="links">Usage Guide</a></li>
+
+          <div class="right">
+            <input
+              id="city"
+              class="search-box"
+              type="text"
+              placeholder="Enter City name"
+            />
+            <button id="Search" type="submit" class="search-btn">Search</button>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="row">
+        <div class="card">
+          <div class="content">
+            <h2 id="cityName">Amsterdam</h2>
+            <div class="sub1"><h3>Feels Like</h3></div>
+            <div id="feelsLike" class="temp"><h3>20 °</h3></div>
+            <div class="text"><h2>Temperature</h2></div>
+            <div class="temp" id="temperature"><h2>18.5°</h2></div>
+            <div class="temp-container">
+              <div>
+                <h4 class="title">min</h4>
+                <h4 id="min_temp">18.5</h4>
+              </div>
+              <div>
+                <h4 class="title">max</h4>
+                <h4 id="max_temp">24.95</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <h2>Humidity</h2>
+            <div class="image">
+              <img src="humidity.png" height="100" width="100" />
+            </div>
+            <div id="Humidity" class="size" class="humid"><h1>85%</h1></div>
+            <div id="rise"><h2>Sunrise: 231247124812491</h2></div>
+            <div id="set"><h2>Sunset: 12124138412</h2></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <h2>Wind</h2>
+            <div class="image">
+              <img src="wind.png" height="100" width="100" />
+            </div>
+            <div id="wind_speed"></div>
+            <div id="wind_deg"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
